@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanqsqsqsqsqsqsqsqss-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dierenasiel - Overzicht</title>
+</head>
+<body>
+
+    <!--Logo-->
+    <a href="index.html"><img src="https://kibuclinicaveterinaria.files.wordpress.com/2013/11/logo-kibu-facebook.jpg"/></a>
+
+    <h3>Overzicht dieren</h3>
+    <p>Naar: <a href="#honden">honden</a> of <a href="#katten">katten</a>. </p>
+    <p>Of voeg een dier toe.</p>
+
+    <h4><a name="honden">Honden: </a></h4>
+    <p>Onze aanbieding aan trouwe viervoeters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor.</p>
+    <table>
+        <thead>
+          <tr>
+            <th>Naam</th>
+            <th>Leeftijd</th>
+            <th>Reg. Nr.</th>
+            <th>Gereserveerd</th>
+          </tr>
+          <tr>
+              <td><b>Rex</b></td>
+              <td>6</td>
+              <td>2765</td>
+              <td>Nee</td>
+          </tr>
+          <tr>
+            <td><b>Woef</b></td>
+            <td>2</td>
+            <td>1246</td>
+            <td>Nee</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h4><a name="katten">Katten: </a></h4>
+      <p>Ons aanbod aan katten. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor.</p>
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Naam</th>
+            <th>Leeftijd</th>
+            <th>Reg. Nr.</th>
+            <th>Gereserveerd</th>
+          </tr>
+          <tr>
+            <td><b>Mitsie</b></td>
+            <td>8</td>
+            <td>9002</td>
+            <td>Ja</td>
+        </tr>
+        <tr>
+            <td><b>Snoes</b></td>
+            <td>1.5</td>
+            <td>6448</td>
+            <td>Nee</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!--Dier toevoegen formulier-->
+      <br />
+      <h2>Een dier toevoegen:</h2>
+      <p>Als u zelf een dier wilt toevoegen kan dat hier.</p>
+      <br />
+      <form>
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" />
+        <br />
+
+        <label for="leeftijd">Leeftijd</label>
+        <input type="number" max="99" min="0" id="leeftijd" />
+        <br />
+
+        <label for="regnr">Reg. nummer</label>
+        <input type="number" max="9999" min="1000" id="regnr" />
+
+        <br />
+        <br />
+
+        <label for="gereserveerd">Gereserveerd?</label>
+        <br/>
+        <form action="">
+            <input type="radio" name="gereserveerd" value="ja"> Ja<br>
+            <input type="radio" name="gereserveerd" value="nee"> Nee<br>
+          </form>
+        <br />
+
+        <label for="hondkat">Hond of kat?</label>
+        <br/>
+        <form action="">
+            <input type="radio" name="hondkat" value="hond"> Hond<br>
+            <input type="radio" name="hondkat" value="kat"> Kat<br>
+          </form>
+        <br />
+
+        <input type="submit" value="Toevoegen" />
+      </form>
+    
+    
+</body>
+</html>
