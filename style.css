@@ -2,7 +2,7 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p {
+p, li {
     font-size: 14px;
 }
 
@@ -13,4 +13,39 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+h4 > a, h4 a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.titel {
+    text-align: center;
+}
+
+th, td {
+    text-align: left;
+}
+
+form > label, #hondkat {
+    font-weight: bold;
+    display:inline-block;
+    width:200px;
+}
+
+input {
+    font-size: 14px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 5px;
+}
+
+.knop{
+    background:#3366cc;
+    font-weight: bold;
+    color: white; 
+    cursor: pointer;
 }
