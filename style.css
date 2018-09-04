@@ -1,0 +1,16 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #339933;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
