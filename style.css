@@ -49,3 +49,12 @@ input {
     color: white; 
     cursor: pointer;
 }
+
+.hidden{
+    visibility: hidden;
+}
+
+form > p {
+    display: inline-block;
+}
+

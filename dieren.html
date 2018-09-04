@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css"/>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $('h1').addClass('titel');
+        $('#naam').after('<p class="hidden">Dit veld is verplicht.</p>');
+      });
+
+
+    </script>
     <title>Dierenasiel - Overzicht</title>
 </head>
 <body>
@@ -14,7 +22,7 @@
     <!--Logo-->
     <a href="index.html"><img src="https://kibuclinicaveterinaria.files.wordpress.com/2013/11/logo-kibu-facebook.jpg"/></a>
 
-    <h3>Overzicht dieren</h3>
+    <h1>Overzicht dieren</h1>
     <p>Naar: <a href="#honden">honden</a> of <a href="#katten">katten</a>. </p>
     <p>Of voeg een dier toe.</p>
 
@@ -109,9 +117,19 @@
           </form>
         <br />
 
-        <input class="knop" type="submit" value="Toevoegen" />
+        <input class="knop" id="toevoegen" type="submit" value="Toevoegen" />
       </form>
     
+
+      <script>
+         $('.knop').click(function(){
+  alert( "Handler for .click() called.");
+});
+
+$('#naam').focusout(function(){
+  $('.hidden').css({'visibility': 'visible'});
+});
+          </script>
     
 </body>
 </html>
