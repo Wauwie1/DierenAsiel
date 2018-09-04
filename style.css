@@ -51,10 +51,14 @@ input {
 }
 
 .hidden{
-    visibility: hidden;
+    visibility: visible;
 }
 
 form > p {
-    display: inline-block;
+    display: inline;
+}
+
+#popup {
+    padding-left: 10px;
 }
 
