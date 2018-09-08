@@ -4,17 +4,22 @@ $( document ).ready(function() {
     $('#naam').after('<p class="hidden" id="popup">Verplicht veld.</p>');
 
 
-    $('.knop').click(function(){
-        alert( "Handler for .click() called.");
-      });
-      
-      $('#naam').focusout(function(){
+    
+      $('#naam').blur(function(){
         $('.hidden').css({'visibility': 'visible'});
       });
       
-      $('#naam').focusin(function(){
+      $('#naam').focus(function(){
         $('.hidden').css({'visibility': 'hidden'});
       });
+
+      function OnSubmit(event){
+        alert( "Handler for .click() called.");
+      }
+      $('#btn_submit').click(OnSubmit);
+
+
+
     
   });
 
