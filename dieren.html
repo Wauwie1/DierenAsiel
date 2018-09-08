@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        * {
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanqsqsqsqsqsqsqsqss-serif;
-        }
-    </style>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
     <title>Dierenasiel - Overzicht</title>
 </head>
 <body>
-
     <!--Logo-->
     <a href="index.html"><img src="https://kibuclinicaveterinaria.files.wordpress.com/2013/11/logo-kibu-facebook.jpg"/></a>
 
-    <h3>Overzicht dieren</h3>
+    <!--Titel-->
+    <h1>Overzicht dieren</h1>
     <p>Naar: <a href="#honden">honden</a> of <a href="#katten">katten</a>. </p>
     <p>Of voeg een dier toe.</p>
 
+    <!--Tabellen-->
     <h4><a name="honden">Honden: </a></h4>
     <p>Onze aanbieding aan trouwe viervoeters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor.</p>
     <table>
@@ -94,6 +97,7 @@
         <br />
         <br />
 
+        
         <label for="gereserveerd">Gereserveerd?</label>
         <br/>
         <form action="">
@@ -102,7 +106,7 @@
           </form>
         <br />
 
-        <label for="hondkat">Hond of kat?</label>
+        <label id="hondkat" for="hondkat">Hond of kat?</label>
         <br/>
         <form action="">
             <input type="radio" name="hondkat" value="hond"> Hond<br>
@@ -110,9 +114,8 @@
           </form>
         <br />
 
-        <input type="submit" value="Toevoegen" />
+        <input class="knop" id="btn_submit" type="submit" value="Toevoegen" />
       </form>
-    
     
 </body>
 </html>
