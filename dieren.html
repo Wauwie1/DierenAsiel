@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css"/>
 
-    <!--Jquery-->
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
 
@@ -27,24 +27,13 @@
     <p>Onze aanbieding aan trouwe viervoeters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel mauris gravida, feugiat ex id, luctus est. Ut sodales, erat ac mollis sagittis, est dui faucibus urna, in vehicula tortor.</p>
     <table>
         <thead>
-          <tr>
+          <tr id="hondenHeader">
             <th>Naam</th>
             <th>Leeftijd</th>
             <th>Reg. Nr.</th>
             <th>Gereserveerd</th>
           </tr>
-          <tr>
-              <td><b>Rex</b></td>
-              <td>6</td>
-              <td>2765</td>
-              <td>Nee</td>
-          </tr>
-          <tr>
-            <td><b>Woef</b></td>
-            <td>2</td>
-            <td>1246</td>
-            <td>Nee</td>
-        </tr>
+          
         </thead>
         <tbody></tbody>
       </table>
@@ -54,7 +43,7 @@
 
 
       <table>
-        <thead>
+        <thead id="kattenHeader">
           <tr>
             <th>Naam</th>
             <th>Leeftijd</th>
@@ -67,12 +56,7 @@
             <td>9002</td>
             <td>Ja</td>
         </tr>
-        <tr>
-            <td><b>Snoes</b></td>
-            <td>1.5</td>
-            <td>6448</td>
-            <td>Nee</td>
-        </tr>
+
         </thead>
         <tbody></tbody>
       </table>
@@ -92,13 +76,13 @@
         <br />
 
         <label for="regnr">Reg. nummer</label>
-        <input type="number" max="9999" min="1000" id="regnr" />
+        <input type="number" max="9999" min="0" id="regnr" />
 
         <br />
         <br />
 
         
-        <label for="gereserveerd">Gereserveerd?</label>
+        <label id="gereserveerd" for="gereserveerd">Gereserveerd?</label>
         <br/>
         <form action="">
             <input type="radio" name="gereserveerd" value="ja"> Ja<br>

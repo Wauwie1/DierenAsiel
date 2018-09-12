@@ -51,7 +51,7 @@ input {
 }
 
 .hidden{
-    visibility: visible;
+    visibility: hidden;
 }
 
 form > p {
