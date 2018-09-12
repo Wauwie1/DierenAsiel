@@ -107,10 +107,6 @@ $( document ).ready(function() {
 
       }
       $('#btn_submit').click(OnSubmit);
-
-
-
-    
   });
 
   
